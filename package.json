@@ -1,0 +1,23 @@
+{
+  "name": "athletics",
+  "version": "1.0.0",
+  "description": "Site Almatyathletics",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-less": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeIv/almatyathletics.git"
+  },
+  "author": "Mike Iv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeIv/almatyathletics/issues"
+  },
+  "homepage": "https://github.com/MikeIv/almatyathletics#readme"
+}
