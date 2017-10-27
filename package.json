@@ -1,8 +1,8 @@
 {
   "name": "athletics",
   "version": "1.0.0",
-  "description": "Site Almatyathletics",
-  "main": "index.js",
+  "private": true,
+  "description": "Gulp project",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
@@ -49,5 +49,18 @@
     "del": "^3.0.0",
     "gulp-svgmin": "^1.2.4",
     "normalize.css": "^7.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeIv/almatyathletics.git"
+  },
+  "keywords": [
+    "athletics"
+  ],
+  "author": "Mike Ivanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeIv/almatyathletics/issues"
+  },
+  "homepage": "https://github.com/MikeIv/almatyathletics#readme"
 }
