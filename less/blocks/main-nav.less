@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -13,7 +15,31 @@
   justify-content: flex-start;
   .list-unstile();
   width: 370px;
+  min-height: 550px;
   margin-left: auto;
   text-align: right;
-  background-color: @blockbg;
+}
+
+.main-nav__item {
+  margin: 10px 0;
+  font-size: 26px;
+
+  &:hover {
+    transform: translateX(-20px);
+    transform: scale(1.1);
+    transform-origin: center right;
+  }
+
+  a {
+    color: @dark-blue;
+  }
+
+  a:hover {
+    color: @light-blue;
+  }
+}
+
+.main-nav__logo {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
