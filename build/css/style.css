@@ -1,3 +1,7 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 body {
   width: auto;
   height: 100%;
@@ -60,6 +64,9 @@ fieldset {
   min-height: 170px;
   background-color: #f2f2f2;
 }
+.page-main {
+  width: auto;
+}
 .main-nav {
   position: relative;
   z-index: 5;
@@ -73,7 +80,7 @@ fieldset {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   min-height: 170px;
 }
@@ -90,22 +97,32 @@ fieldset {
           justify-content: flex-start;
   padding: 0;
   list-style: none;
-  width: 370px;
+  width: 350px;
   min-height: 550px;
   margin-left: auto;
   text-align: right;
 }
 .main-nav__item {
   margin: 10px 0;
-  font-size: 26px;
+  font-size: 21px;
 }
 .main-nav__item:hover {
+  padding-right: 10px;
+  background-color: #fff776;
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transform-origin: center right;
           transform-origin: center right;
+}
+.main-nav__item--activ:hover {
+  padding-right: 0px;
+  background-color: transparent;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .main-nav__item a {
   color: #04619e;
@@ -117,6 +134,14 @@ fieldset {
   margin-top: 0px;
   margin-bottom: 30px;
 }
+.main-nav__logo:hover {
+  padding-right: 0;
+  background-color: transparent;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 .intro {
   position: relative;
   width: 100%;
@@ -124,12 +149,11 @@ fieldset {
   margin: 0 auto;
   margin-top: -590px;
   padding: 0;
-  overflow-x: hidden;
   background-image: url("../img/bg-back-desktop@1x.jpg");
   background-size: auto;
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #e0d689;
+  overflow-x: hidden;
 }
 .intro__wrapper {
   display: -webkit-box;
@@ -158,9 +182,30 @@ fieldset {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 330px;
+  width: 275px;
   min-height: 300px;
   text-align: center;
+}
+.intro__btn {
+  width: 210px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #3cccef;
+  border-radius: 30px;
+  border: 2px solid #fff776;
+  text-transform: uppercase;
+}
+.intro__news {
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #25abcd;
 }
 .slogan {
   width: auto;
