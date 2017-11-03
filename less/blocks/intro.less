@@ -33,24 +33,38 @@
 
 
 .intro__btn {
-  width: 210px;
+  position: relative;
+  z-index: 6;
+  margin: 10px 0;
   padding: 10px 30px;
   color: @white;
   background-color: @light-blue;
   border-radius: 30px;
   border: 2px solid @yellow;
   text-transform: uppercase;
+
+  &:hover {
+    color: @yellow;
+    background-color: @middle-blue;
+  }
 }
 
 .intro__news {
   margin-bottom: 30px;
   margin-top: 25px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
   color: @white;
-  border-radius: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 3px solid @dark-yellow;
   background-color: @middle-blue;
+
+  &:hover {
+    color: @yellow;
+    background-color: @light-blue;
+  }
 }
