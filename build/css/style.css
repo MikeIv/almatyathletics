@@ -30,6 +30,10 @@ img {
 a {
   text-decoration: none;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 fieldset {
   border: none;
 }
@@ -69,6 +73,11 @@ fieldset {
 }
 .page-main {
   width: auto;
+}
+.page-footer {
+  width: auto;
+  min-height: 100px;
+  background-color: #04619e;
 }
 .main-nav {
   position: relative;
@@ -184,7 +193,7 @@ fieldset {
           order: 2;
 }
 .main-nav__inner-pages-list {
-  width: 350px;
+  width: 290px;
   min-height: 167px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -197,13 +206,19 @@ fieldset {
   background-image: url("../img/bg-back-news-desktop@1x.jpg");
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 370px 197px;
-  background-color: #fcfdb3;
+  background-size: 285px 197px;
+  background-color: #fff7c8;
 }
 .main-nav__inner-pages-item {
   padding-top: 167px;
   font-size: 0;
   color: #25abcd;
+}
+.main-nav__team {
+  overflow: hidden;
+  background-image: url("/img/fotolia_100081667.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .intro {
   position: relative;
@@ -299,10 +314,13 @@ fieldset {
       -ms-flex-align: center;
           align-items: center;
   max-width: 960px;
+  min-height: 150px;
   margin: 0 auto;
 }
 .slogan__text {
   max-width: 940px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 36px;
   font-weight: 300;
   line-height: 42px;
@@ -583,13 +601,13 @@ fieldset {
 }
 .news-page {
   margin: auto;
+  margin-bottom: 100px;
 }
 .news-page__block {
   max-width: 960px;
   min-height: 1000px;
   margin: 0 auto;
   padding: 0;
-  background-color: #a8f2e1;
 }
 .news-page__list {
   display: -webkit-box;
@@ -602,6 +620,7 @@ fieldset {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -616,4 +635,150 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+.paper {
+  width: auto;
+  margin-top: 60px;
+  background-color: #dcf8ff;
+}
+.paper__photo {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+.paper__photo img {
+  width: 300px;
+  height: 200px;
+}
+.paper__photo1 {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+.paper__photo1 img {
+  width: 300px;
+  height: 300px;
+}
+.paper__item {
+  position: relative;
+  max-width: 630px;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #04619e;
+}
+.paper__header {
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  color: #04619e;
+}
+.paper__text {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+}
+.team-page {
+  width: auto;
+}
+.team-page__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.team-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  list-style: none;
+}
+.team-page__item {
+  width: 400px;
+  text-align: left;
+}
+.team {
+  width: auto;
+}
+.team__photo {
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  outline: 2px solid #f4c839;
+}
+.team__photo img {
+  width: 400px;
+  height: 300px;
+}
+.team__item {
+  width: 400px;
+}
+.team__tabl {
+  width: 400px;
+}
+.tabl {
+  display: table;
+  width: 400px;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+.tabl__header {
+  display: table-caption;
+}
+.tabl__col {
+  display: table-row;
+  width: 200px;
+  margin: 0;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  padding: 0;
+  list-style: none;
+}
+.tabl__cell {
+  display: table-cell;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: middle;
+  color: #25abcd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+.tabl__cell-1 {
+  width: 150px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #04619e;
+}
+.tabl__cell-2 {
+  width: 250px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: #333333;
+}
+.tabl__content {
+  display: table-row-group;
 }
