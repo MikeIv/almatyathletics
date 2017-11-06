@@ -169,7 +169,7 @@ fieldset {
 }
 .main-nav__news {
   overflow: hidden;
-  background-image: url("/img/fotolia_176957155.jpg");
+  background-image: url("../img/fotolia_176957155.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -216,7 +216,7 @@ fieldset {
 }
 .main-nav__team {
   overflow: hidden;
-  background-image: url("/img/fotolia_100081667.jpg");
+  background-image: url("../img/fotolia_100081667.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
