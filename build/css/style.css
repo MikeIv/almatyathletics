@@ -30,6 +30,10 @@ img {
 a {
   text-decoration: none;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 fieldset {
   border: none;
 }
@@ -63,6 +67,9 @@ fieldset {
   padding: 0;
   min-height: 170px;
   background-color: #f2f2f2;
+}
+.page-header--news {
+  background-color: #ffffff;
 }
 .page-main {
   width: auto;
@@ -157,6 +164,9 @@ fieldset {
 }
 .main-nav__news {
   overflow: hidden;
+  background-image: url("/img/fotolia_176957155.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-nav__news::before {
   content: "";
@@ -191,11 +201,12 @@ fieldset {
   background-image: url("../img/bg-back-news-desktop@1x.jpg");
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 370px 170px;
+  background-size: 370px 197px;
   background-color: #fcfdb3;
 }
 .main-nav__inner-pages-item {
   padding-top: 167px;
+  font-size: 0;
   color: #25abcd;
 }
 .intro {
@@ -577,9 +588,69 @@ fieldset {
 .news-page {
   margin: auto;
 }
-.news-page__wrapper {
+.news-page__block {
   max-width: 960px;
-  min-height: 500px;
+  min-height: 1000px;
   margin: 0 auto;
-  background-color: #a8f2e1;
+  padding: 0;
+  background-color: #f9ffc7;
+}
+.news-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+}
+.news-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.paper {
+  width: auto;
+  margin-top: 20px;
+}
+.paper__photo {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+.paper__photo img {
+  width: 300px;
+  height: 200px;
+}
+.paper__item {
+  width: 580px;
+  padding-left: 30px;
+}
+.paper__header {
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  color: #04619e;
+}
+.paper__text {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
 }
