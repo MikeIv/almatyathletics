@@ -9,6 +9,24 @@
 
 .tabl__header {
   display: table-caption;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  color: @dark-blue;
+}
+
+.tabl__header-honor {
+  width: auto;
+  padding: 0 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31px;
+  color: @white;
+  background-color: @dark-yellow;
 }
 
 .tabl__col {
@@ -26,7 +44,7 @@
   display: table-cell;
   height: 30px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   text-align: left;
   vertical-align: middle;
   color: @middle-blue;
@@ -35,8 +53,8 @@
 }
 
 .tabl__cell-1 {
-  width: 150px;
-  font-size: 16px;
+  width: 130px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #04619e;
@@ -53,4 +71,11 @@
 
 .tabl__content {
   display: table-row-group;
+}
+
+.tabl__col-2,
+.tabl__col-4,
+.tabl__col-6 {
+  background-color: @bg-light-blue;
+
 }
