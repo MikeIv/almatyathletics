@@ -222,7 +222,7 @@ fieldset {
 }
 .main-nav__showing {
   overflow: hidden;
-  background-image: url("/img/fotolia_92558331.jpg");
+  background-image: url("../img/fotolia_92558331.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -942,4 +942,10 @@ fieldset {
 }
 .showing-tabl__row-3 {
   background-color: #dcf8ff;
+}
+.showing-tabl__txt {
+  padding: 15px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: italic;
 }
