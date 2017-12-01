@@ -129,14 +129,16 @@ fieldset {
           justify-content: flex-start;
   padding: 0;
   list-style: none;
-  width: 330px;
+  width: 300px;
   min-height: 530px;
   margin-left: auto;
   text-align: right;
 }
 .main-nav__item {
   margin: 8px 0;
+  padding: 3px 0;
   font-size: 18px;
+  line-height: 20px;
 }
 .main-nav__item--activ {
   position: relative;
@@ -285,9 +287,17 @@ fieldset {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 275px;
   min-height: 300px;
   text-align: center;
+}
+.intro__socials {
+  width: 250px;
+  height: 50px;
+  z-index: 6;
 }
 .intro__btn {
   position: relative;
@@ -395,6 +405,10 @@ fieldset {
   font-size: 30px;
   font-weight: 300;
   border-right: 2px solid #04619e;
+}
+.sponsor__item2 {
+  width: 200px;
+  height: 100px;
 }
 .news {
   width: 0 auto;
@@ -621,10 +635,50 @@ fieldset {
   text-align: left;
 }
 .note__photo {
+  position: relative;
   width: 265px;
   height: 200px;
   margin: 0;
   padding: 0;
+  border: 3px solid #f4c839;
+  border-radius: 3px;
+  z-index: 3;
+}
+.note__photo:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: 206px;
+  width: 271px;
+  background: linear-gradient(60deg, #f79533, #f37055, #f4c839, #fff07d, #69e7fd, #1098ad, #07a6b3, #e5d982);
+  border-radius: 5px;
+  z-index: -1;
+  -webkit-animation: animatedgradient 4s ease alternate infinite;
+          animation: animatedgradient 4s ease alternate infinite;
+  background-size: 300% 300%;
+}
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .note__photo img {
   width: 265px;
@@ -981,4 +1035,44 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   font-style: italic;
+}
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.social__item {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid rgba(4, 97, 158, 0.5);
+  border-radius: 55%;
+  font-size: 0;
+}
+.social__item--tw {
+  background-image: url("../img/icon-facebook.svg");
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social__item--fb {
+  background-image: url("../img/icon-instagram.svg");
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social__item:hover {
+  border: 2px solid #25abcd;
+  background-color: #f4c839;
+}
+.social__item:active {
+  border: 2px solid rgba(40, 54, 69, 0.1);
 }
