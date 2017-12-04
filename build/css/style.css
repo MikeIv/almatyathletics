@@ -66,6 +66,7 @@ fieldset {
   margin: 0 auto;
   padding: 0;
   min-height: 170px;
+  overflow: hidden;
 }
 .page-header--news {
   background-color: #ffffff;
@@ -278,13 +279,13 @@ fieldset {
   background-color: #f2f2f2;
 }
 .intro__slides {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 0;
-  left: -500px;
+  left: -400px;
   width: 2500px;
   min-height: 750px;
-  padding: 0px;
-  margin: 0 auto;
   list-style-type: none;
   overflow: hidden;
 }
@@ -295,16 +296,16 @@ fieldset {
   transition: opacity 2s;
 }
 .intro__slide {
+  margin: 0;
+  padding: 0;
   position: absolute;
-  left: 50%;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 2500px;
   min-height: 750px;
   font-size: 0;
   opacity: 0;
   z-index: 1;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
   overflow: hidden;
 }
 .intro__wrapper {
@@ -410,6 +411,7 @@ fieldset {
   min-height: 150px;
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
 }
 .slogan__wrapper {
   display: -webkit-box;
@@ -443,6 +445,7 @@ fieldset {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 .sponsor__wrapper {
   max-width: 960px;
@@ -486,6 +489,7 @@ fieldset {
 .news {
   width: 0 auto;
   background-color: #e6faff;
+  overflow: hidden;
 }
 .news__wrapper {
   display: block;
@@ -538,6 +542,7 @@ fieldset {
   width: 0 auto;
   min-height: 330px;
   background-color: #fff9d3;
+  overflow: hidden;
 }
 .promo-news img {
   max-width: 700px;
@@ -648,7 +653,7 @@ fieldset {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 960px;
+  max-width: 960px;
   padding: 0;
   list-style: none;
 }
