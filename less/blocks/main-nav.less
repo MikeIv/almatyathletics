@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -14,14 +14,20 @@
   flex-direction: column;
   justify-content: flex-start;
   .list-unstile();
-  width: 300px;
-  min-height: 530px;
+  width: 240px;
+  min-height: 390px;
   margin-left: auto;
+  margin-bottom: 140px;
+  padding-right: 10px;
   text-align: right;
+  background-color: rgba(250,250,250, 0.7);
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .main-nav__item {
-  margin: 8px 0;
+  margin: 0;
+  margin-bottom: 16px;
   padding: 3px 0;
   font-size: 18px;
   line-height: 20px;
@@ -29,6 +35,7 @@
   &--activ {
     position: relative;
     margin-left: auto;
+    font-weight: bold;
 
     a::after {
       content: "";
@@ -36,9 +43,13 @@
       top: 28px;
       left: 0;
       right: 0;
-      height: 2px;
+      height: 1px;
       background-color: @middle-blue;
     }
+  }
+
+  &--twoline a::after {
+    top: 48px;
   }
 
   &:hover {
@@ -137,4 +148,8 @@
   background-image: url("../img/fotolia_92558331.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-nav__federation {
+
 }

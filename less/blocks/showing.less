@@ -1,3 +1,40 @@
+.showing__section {
+  max-width: 960px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-color: #e6faff;
+}
+
+.showing__head-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  .list-unstile();
+}
+
+.showing__head-item {
+  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 3px solid @dark-yellow;
+  background-color: @middle-blue;
+  animation: attention 3s infinite;
+}
+
+.showing__head-item a {
+  color: #ffffff;
+}
+
 .showing__wrapper {
   max-width: 960px;
   min-height: 1000px;
@@ -15,9 +52,70 @@
 
 .showing__item {
   width: 800px;
-  text-align: c;
+  margin: 0 auto;
 }
 
 .showing__tabl {
   width: 700px;
 }
+
+
+.showing__document {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.showing__document-header {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  color: @dark-blue;
+}
+
+.showing__document-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  .list-unstile();
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff9d3;
+}
+
+.showing__document-item {
+  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 3px solid @dark-yellow;
+  background-color: @middle-blue;
+  animation: attention 3s infinite;
+}
+
+.showing__document-item a {
+  color: #ffffff;
+}
+
+

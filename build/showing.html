@@ -29,11 +29,11 @@
 
   <main class="page-main showing">
     <h1 class="visually-hidden">Документы и Результаты</h1>
-    <section>
-      <ul>
-        <li><a href="">Результаты</a></li>
-        <li><a href="">Документы</a></li>
-        <li><a href="">Архив документов</a></li>
+    <section class="showing__section">
+      <ul class="showing__head-list">
+        <li class="showing__head-item"><a href="#record">Результаты</a></li>
+        <li class="showing__head-item"><a href="#document">Документы</a></li>
+        <li class="showing__head-item"><a href="">Архив документов</a></li>
       </ul>
     </section>
     <article class="showing__info">
@@ -43,7 +43,7 @@
           <li class="showing__item">
             <div class="showing__item">
               <div class="showing__tabl showing-tabl">
-                <h3 class="showing-tabl__header">Рекорды сборной спортсменов г. Алматы</h3>
+                <h3 class="showing-tabl__header" id="record">Рекорды сборной спортсменов г. Алматы</h3>
                 <div class="showing-tabl__column"></div>
                 <div class="showing-tabl__column"></div>
                 <div class="showing-tabl__column"></div>
@@ -445,6 +445,15 @@
         </ul>
       </section>
     </article>
+    <section class="showing__document" id="document">
+      <h3 class="showing__document-header">Документы</h3>
+      <ul class="showing__document-list">
+        <li class="showing__document-item"><a class="showing__document-link" href="doc/Положение Гиржон.pdf">Положение Гиржон</a></li>
+        <li class="showing__document-item"><a class="showing__document-link" href="doc/Регламент Гиржон.pdf">Регламент Гиржон</a></li>
+        <li class="showing__document-item"><a class="showing__document-link" href="doc/Положение Шишигина.pdf">Положение Шишигина</a></li>
+        <li class="showing__document-item"><a class="showing__document-link" href="doc/Регламент Шишигина.pdf">Регламент Шишигина</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer class="page-footer">

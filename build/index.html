@@ -8,6 +8,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -31,14 +34,31 @@
     <h1 class="visually-hidden">Федерация легкой атлетики Алматы</h1>
     <section class="intro">
       <h2 class="visually-hidden">Главная новость</h2>
+      <ul class="intro__slides">
+        <li class="intro__slide">Slide 1
+          <img src="img/bg-back-desktop@1x.jpg" alt="slide1">
+        </li>
+        <li class="intro__slide">Slide 2
+          <img src="img/bg-back2-desktop@1x.jpg" alt="slide2">
+        </li>
+        <li class="intro__slide">Slide 3
+          <img src="img/bg-back3-desktop@1x.jpg" alt="slide3">
+        </li>
+        <li class="intro__slide">Slide 4
+          <img src="img/bg-back4-desktop@1x.jpg" alt="slide3">
+        </li>
+        <li class="intro__slide-showing">Slide 5
+          <img src="img/bg-back-desktop@1x.jpg" alt="slide4">
+        </li>
+      </ul>
         <div class="intro__wrapper">
         <div class="intro__promo-block">
           <div class="intro__socials social">
             <a class="social__item social__item--tw" href="https://www.facebook.com/almatyathletics/?ref=br_rs" title="Мы в Фейсбук" target="_blank">Facebook</a>
             <a class="social__item social__item--fb" href="https://www.instagram.com/almatyathletics/" title="Мы в Фейсбук" target="_blank">Instagram</a>
           </div>
-          <a class="intro__btn" href="#">Календарь событий</a>
-          <a class="intro__news" href="news.html">Любительские забеги на профессиональные дистанции</a>
+          <a class="intro__btn" href="#calend-event">Календарь событий</a>
+          <a class="intro__news" href="news.html">15  и  16 декабря состоятся Республиканские соревнования для юношей памяти ЗТРК О.Н.Гиржон.</a>
         </div>
       </div>
     </section>
@@ -56,7 +76,7 @@
         <ul class="sponsor__list">
           <li class="sponsor__item sponsor__item1">Наши партнеры</li>
           <li class="sponsor__item sponsor__item2">
-            <a class="sponsor__link" href=""><img src="../img/logo_AlmatyAthletics.jpg" alt="логотип AlmatyAthletics"></a>
+            <a class="sponsor__link" href=""><img src="img/logo_AlmatyAthletics.jpg" alt="логотип AlmatyAthletics"></a>
           </li>
           <li class="sponsor__item sponsor__item2">
             <a class="sponsor__link" href=""><img src="" alt=""></a>
@@ -103,12 +123,12 @@
       <div class="promo-news__wrapper">
         <h3 class="promo-news__header">Открытие офиса<br>Федерации легкой атлетики г.Алматы</h3>
         <p class="promo-news__text">Свои двери открыл офис «Федерации легкой атлетики г.Алматы». Офис предназначен для встреч спортсменов и тренеров, обсуждения вопросов, касающихся развитию легкой атлетики г.Алматы.</p>
-        <a class="promo-news__link" href="#">Узнать больше</a>
+        <a class="promo-news__link" href="news.html">Узнать больше</a>
       </div>
     </section>
 
     <section class="calendar">
-      <h2 class="visually-hidden">Календарь спортивных событий</h2>
+      <h2 class="visually-hidden" id="calend-event">Календарь спортивных событий</h2>
       <div class="calendar__wrapper">
         <h3 class="calendar__header">Календарный план спортивных событий </h3>
         <img class="calendar__tabl" src="img/tabl.svg" alt="план спортивных мероприятий" width="750" height="300">
@@ -148,6 +168,7 @@
     </section>
   </footer>
 <script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 </body>
 
 </html>
