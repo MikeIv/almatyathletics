@@ -677,6 +677,7 @@ fieldset {
 .contacts__map {
   width: 100%;
   min-height: 300px;
+  border: none;
 }
 .note {
   display: -webkit-box;
@@ -1092,6 +1093,9 @@ fieldset {
   font-weight: 300;
   line-height: normal;
   color: #04619e;
+}
+.federation__txt-it {
+  padding-top: 8px;
 }
 .showing__section {
   max-width: 960px;
