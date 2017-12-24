@@ -32,6 +32,10 @@
   font-size: 18px;
   line-height: 20px;
 
+  &--mobile {
+    display: none;
+  }
+
   &--activ {
     position: relative;
     margin-left: auto;
@@ -153,3 +157,74 @@
 .main-nav__federation {
 
 }
+
+
+
+@media (max-width: @tablet-width) {
+
+  .main-nav {
+    display: block;
+    max-width: 930px;
+  }
+
+  .main-nav__list {
+    width: 100%;
+    min-height: 190px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: @white;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+
+  .main-nav__item {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3cccef;
+    border-top: 1px solid @light-gray;
+    border-bottom: 1px solid @light-blue;
+
+
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+
+    a {
+      color: @white;
+      text-transform: uppercase;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 0;
+      right: 0;
+      height: 0px;
+    }
+
+    &:hover {
+      padding-right: 0px;
+      background-color: @yellow;
+      transform: translateX(0px);
+      transform: scale(1);
+      transform-origin: center;
+    }
+  }
+
+  .main-nav__logo {
+    background-color: @white;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+}
+
+
+
