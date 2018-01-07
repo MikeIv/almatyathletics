@@ -507,6 +507,41 @@ fieldset {
     margin: 0;
     text-align: center;
   }
+  .intro__news {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: 5px solid #f4c839;
+    border-right: 5px solid #f4c839;
+    background-color: #25abcd;
+    -webkit-animation: attention 2s infinite;
+            animation: attention 2s infinite;
+  }
+  .intro__news:hover {
+    color: #fde666;
+    background-color: #3cccef;
+  }
+  @-webkit-keyframes attention {
+    0% {
+      background-color: #25abcd;
+    }
+    50% {
+      background-color: #3cccef;
+    }
+    100% {
+      background-color: #25abcd;
+    }
+  }
+  @keyframes attention {
+    0% {
+      background-color: #25abcd;
+    }
+    50% {
+      background-color: #3cccef;
+    }
+    100% {
+      background-color: #25abcd;
+    }
+  }
 }
 .slogan {
   width: auto;
@@ -529,6 +564,10 @@ fieldset {
   min-height: 150px;
   margin: 0 auto;
 }
+.slogan__wrapper img {
+  width: 600px;
+  height: auto;
+}
 .slogan__text {
   max-width: 940px;
   margin-top: auto;
@@ -538,6 +577,18 @@ fieldset {
   line-height: 42px;
   color: #3cccef;
   text-align: center;
+}
+@media (max-width: 930px) {
+  .slogan__text {
+    width: 100%;
+    padding: 0px 12px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  .slogan__wrapper img {
+    width: 100%;
+  }
 }
 .sponsor {
   width: 100%;
@@ -587,6 +638,42 @@ fieldset {
 .sponsor__item2 {
   width: 200px;
   height: 100px;
+}
+@media (max-width: 930px) {
+  .sponsor__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sponsor__item {
+    width: 200px;
+    padding: 0;
+  }
+  .sponsor__item1 {
+    width: 230px;
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-right: 0px;
+    font-size: 26px;
+    font-weight: 300;
+    border-right: 0;
+    text-align: center;
+  }
+  .sponsor__item2 {
+    width: 200px;
+    height: 100px;
+  }
 }
 .news {
   width: 0 auto;
@@ -732,6 +819,26 @@ fieldset {
   line-height: normal;
   color: #d03a17;
   text-decoration: underline;
+}
+@media (max-width: 930px) {
+  .calendar__wrapper {
+    min-height: 120px;
+    margin: 0 auto;
+    background-image: none;
+  }
+  .calendar__header {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .calendar__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
 }
 .contacts {
   width: auto;
@@ -1251,6 +1358,24 @@ fieldset {
 }
 .federation__txt-it {
   padding-top: 8px;
+}
+@media (max-width: 930px) {
+  .federation__person-item {
+    width: 100%;
+    min-height: 200px;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  .federation__info {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .federation__text {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .showing__section {
   max-width: 960px;

@@ -159,4 +159,34 @@
   }
 
 
+
+  .intro__news {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: 5px solid @dark-yellow;
+    border-right: 5px solid @dark-yellow;
+    background-color: @middle-blue;
+    animation: attention 2s infinite;
+
+    &:hover {
+      color: @yellow;
+      background-color: @light-blue;
+
+      @keyframes attention {
+        0% {
+          background-color: @middle-blue;
+        }
+
+        50% {
+          background-color: @light-blue;
+        }
+
+        100% {
+          background-color: @middle-blue;
+        }
+      }
+    }
+  }
+
+
 }
