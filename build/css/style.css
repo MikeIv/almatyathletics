@@ -122,7 +122,8 @@ fieldset {
   margin: 0 auto;
   min-height: 170px;
 }
-.main-nav__toggle {
+.main-nav__toggle,
+.main-nav__nav-txt {
   display: none;
 }
 .main-nav__list {
@@ -287,6 +288,7 @@ fieldset {
     background-color: transparent;
     cursor: pointer;
     border: none;
+    outline: none;
   }
   .main-nav__toggle:hover,
   .main-nav__toggle:active {
@@ -296,6 +298,7 @@ fieldset {
     min-height: 80px;
   }
   .main-nav__nav-txt {
+    display: block;
     content: "";
     position: absolute;
     top: 33px;

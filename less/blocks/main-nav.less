@@ -9,7 +9,8 @@
   min-height: 170px;
 }
 
-.main-nav__toggle {
+.main-nav__toggle,
+.main-nav__nav-txt {
   display: none;
 }
 
@@ -186,6 +187,7 @@
 
     cursor: pointer;
     border: none;
+    outline: none;
 
     &:hover,
     &:active {
@@ -198,6 +200,7 @@
   }
 
   .main-nav__nav-txt {
+    display: block;
     content: "";
     position: absolute;
     top: 33px;

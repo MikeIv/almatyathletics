@@ -6,7 +6,7 @@
   <title>Федерация легкой атлетики Алматы</title>
   <meta name="description" content="Легкая атлетика, легкая атлетика Алматы, Федерация, athletics">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="Cache-Control" content="max-age=2800, must-revalidate">
+  <meta http-equiv="Cache-Control" content="max-age=2800, must-revalidate" />
   <link href="css/style.min.css?nocache=<?php echo time(); ?>" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
   <!--[if lt IE 9]>
@@ -17,21 +17,21 @@
 <body>
 
   <header class="page-header page-header--news">
-    <nav class="main-nav main-nav__news">
-      <ul class="main-nav__list main-nav__list-inner">
-        <li class="main-nav__item main-nav__logo"><a class="main-nav__link-logo">
-          <img src="img/logo_200x114.png" width="200" height="114" alt="Логотип Федерации">
-        </a></li>
-        <li class="main-nav__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item  main-nav__item--activ"><a>Новости</a></li>
-        <li class="main-nav__item main-nav__item--desktop"><a href="team.html">Тренера и спортсмены<br>г. Алматы</a></li>
-        <li class="main-nav__item main-nav__item--mobile"><a href="team.html">Тренера и спортсмены г. Алматы</a></li>
-        <li class="main-nav__item"><a href="showing.html">Документы</a></li>
-        <li class="main-nav__item"><a href="federation.html">О Федерации</a></li>
-      </ul>
-      <ul class="main-nav__inner-pages-list">
-        <li class="main-nav__inner-pages-item">Новости Федерации</li>
-      </ul>
+    <nav class="main-nav main-nav__news main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="main-nav__nav-txt">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__logo"><a class="main-nav__link-logo" href="index.html">
+            <img src="img/logo_200x114.png" width="200" height="114" alt="Логотип Федерации">
+          </a></li>
+          <li class="main-nav__item main-nav__item-js"><a>Главная</a></li>
+          <li class="main-nav__item main-nav__item-js main-nav__item--activ"><a href="news.html">Новости</a></li>
+          <li class="main-nav__item main-nav__item-js main-nav__item--desktop"><a href="team.html">Тренера и спортсмены<br>г. Алматы</a></li>
+          <li class="main-nav__item main-nav__item-js main-nav__item--mobile"><a href="team.html">Тренера и спортсмены г.Алматы</a></li>
+          <li class="main-nav__item main-nav__item-js"><a href="showing.html">Документы</a></li>
+          <li class="main-nav__item main-nav__item-js"><a href="federation.html">О Федерации</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -217,6 +217,7 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
