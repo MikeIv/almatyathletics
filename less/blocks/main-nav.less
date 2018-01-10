@@ -9,6 +9,10 @@
   min-height: 170px;
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -163,9 +167,134 @@
 @media (max-width: @tablet-width) {
 
   .main-nav {
+    position: relative;
     display: block;
     max-width: 930px;
   }
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+
+    display: block;
+    width: 60px;
+    height: 50px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+
+    &__wrapper {
+      min-height: 80px;
+    }
+  }
+
+  .main-nav__nav-txt {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 9px;
+    font-size: 9px;
+    color: @middle-blue;
+  }
+
+  .main-nav--opened {
+    background-color: @middle-blue;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 90px;
+    right: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: 22px;
+      width: 28px;
+      height: 4px;
+      background-color: @middle-blue;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: @dark-yellow;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(@middle-blue, 30%);
+    }
+
+  }
+
+  .main-nav--opened .main-nav__nav-txt {
+    display: none;
+  }
+
+  .main-nav--closed {
+    background-color: none;
+  }
+
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 50px;
+    height: 2px;
+    background-color: @middle-blue;
+    box-shadow: 0 8px 0 0 @middle-blue, 0 16px 0 0 @middle-blue;
+  }
+
+
+  .main-nav--closed .main-nav__toggle:hover::before {
+    background-color: @dark-yellow;
+    box-shadow: 0 8px 0 0 @dark-yellow, 0 16px 0 0 @dark-yellow;
+  }
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: fade(@middle-blue, 30%);
+    box-shadow: 0 8px 0 0 fade(@middle-blue, 30%), 0 16px 0 0 fade(@middle-blue, 30%);
+  }
+
+
+
+  .main-nav--closed .main-nav__item-js {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--closed .main-nav__item-js--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+
+    text-align: center;
+  }
+
+
 
   .main-nav__list {
     width: 100%;
