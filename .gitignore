@@ -8,5 +8,6 @@
 css/*.css
 node_modules/
 npm-debug.*
+#inbox
 Thumbs.db
 
