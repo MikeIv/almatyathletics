@@ -9,5 +9,5 @@ css/*.css
 node_modules/
 npm-debug.*
 Thumbs.db
-#inbox/**
+#inbox/
 
