@@ -23,3 +23,33 @@
 .team__tabl {
   width: 400px;
 }
+
+
+
+@media (max-width: @mobile-width) {
+  .team__photo {
+    width: auto;
+    height: auto;
+    outline: none;
+
+    img {
+      width: 400px;
+      height: auto;
+    }
+
+  }
+
+  .team__item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .team__tabl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+}

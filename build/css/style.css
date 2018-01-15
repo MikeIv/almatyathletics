@@ -105,6 +105,14 @@ fieldset {
   line-height: 18px;
   color: #ffffff;
 }
+@media (max-width: 480px) {
+  .page-footer {
+    overflow: hidden;
+  }
+  .page-footer__text {
+    font-size: 12px;
+  }
+}
 .main-nav {
   position: relative;
   z-index: 10;
@@ -1248,11 +1256,24 @@ fieldset {
   }
 }
 .team-page {
-  width: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .team-page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .team-page__header {
   margin-top: 50px;
@@ -1285,6 +1306,20 @@ fieldset {
   width: 400px;
   text-align: left;
 }
+@media (max-width: 480px) {
+  .team-page__wrapper {
+    padding: 0 10px;
+  }
+  .team-page__list {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .team-page__item {
+    width: auto;
+    margin: 0 auto;
+  }
+}
 .team {
   width: auto;
   margin-bottom: 80px;
@@ -1305,6 +1340,34 @@ fieldset {
 .team__tabl {
   width: 400px;
 }
+@media (max-width: 480px) {
+  .team__photo {
+    width: auto;
+    height: auto;
+    outline: none;
+  }
+  .team__photo img {
+    width: 400px;
+    height: auto;
+  }
+  .team__item {
+    width: 100%;
+    margin: 0;
+  }
+  .team__tabl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
 .tabl {
   display: table;
   width: 400px;
@@ -1315,9 +1378,7 @@ fieldset {
 }
 .tabl__header {
   display: table-caption;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 21px;
   font-weight: 500;
   line-height: 28px;
@@ -1376,6 +1437,31 @@ fieldset {
 .tabl__col-4,
 .tabl__col-6 {
   background-color: #e6faff;
+}
+@media (max-width: 480px) {
+  .tabl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .tabl__col {
+    max-width: 180px;
+  }
+  .tabl__cell-1 {
+    max-width: 130px;
+  }
+  .tabl__cell-2 {
+    max-width: 180px;
+  }
 }
 .federation__wrapper {
   max-width: 960px;

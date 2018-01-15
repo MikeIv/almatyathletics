@@ -1,10 +1,16 @@
 .team-page {
-  width: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .team-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .team-page__header {
@@ -29,4 +35,22 @@
 .team-page__item {
   width: 400px;
   text-align: left;
+}
+
+
+@media (max-width: @mobile-width) {
+  .team-page__wrapper {
+    padding: 0 10px;
+  }
+
+  .team-page__list {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .team-page__item {
+    width: auto;
+    margin: 0 auto;
+  }
 }
