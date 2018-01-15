@@ -38,6 +38,7 @@
   background-color: #fff;
   border: 2px solid #e5e5e5;
   .list-unstile();
+  box-sizing: border-box;
 }
 
 
@@ -98,4 +99,67 @@
   font-size: 14px;
   line-height: 21px;
   font-style: italic;
+}
+
+
+@media (max-width: @tablet-width) {
+  .showing-tabl {
+    width: 100%;
+  }
+
+  .showing-tabl__cell-1 {
+    max-width: 180px;
+  }
+
+  .showing-tabl__cell-2,
+  .showing-tabl__cell-3,
+  .showing-tabl__cell-4,
+  .showing-tabl__cell-5 {
+    max-width: 90px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+
+
+
+@media (max-width: @mobile-width) {
+  .showing-tabl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .showing-tabl__header {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .showing-tabl__content {
+    width: 100%;
+  }
+
+  .showing-tabl__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .showing-tabl__cell {
+    max-width: 600px;
+    border-bottom: 1px solid @dark-blue;
+  }
+
+  .showing-tabl__cell-1 {
+    width: 100%;
+  }
+
+  .showing-tabl__cell-2,
+  .showing-tabl__cell-3,
+  .showing-tabl__cell-4,
+  .showing-tabl__cell-5 {
+    width: 100%;
+  }
 }
