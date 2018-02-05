@@ -7,7 +7,9 @@
 *.sublime*
 css/*.css
 node_modules/
+#inbox/
+#inbox/**
 npm-debug.*
 Thumbs.db
-#inbox/
-#inbox
+
+
