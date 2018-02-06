@@ -69,6 +69,7 @@
   margin-bottom: 80px;
   padding: 20px;
   box-sizing: border-box;
+
 }
 .showing__document-header {
   display: flex;
@@ -109,7 +110,10 @@
   border-bottom-right-radius: 8px;
   border-left: 3px solid @dark-yellow;
   background-color: @middle-blue;
-  animation: attention 3s infinite;
+
+  &--main {
+    background-color: @dark-red;
+  }
 }
 
 .showing__document-item a {
