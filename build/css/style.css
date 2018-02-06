@@ -528,8 +528,9 @@ fieldset {
 .intro__btn {
   position: relative;
   z-index: 6;
-  margin: 10px 0;
-  padding: 10px 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 70px;
   color: #ffffff;
   background-color: #3cccef;
   border-radius: 30px;
@@ -669,6 +670,10 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -682,6 +687,9 @@ fieldset {
 .slogan__wrapper img {
   width: 600px;
   height: auto;
+}
+.slogan__img {
+  margin: 20px 0;
 }
 .slogan__text {
   max-width: 940px;
@@ -1708,8 +1716,9 @@ fieldset {
   border-bottom-right-radius: 8px;
   border-left: 3px solid #f4c839;
   background-color: #25abcd;
-  -webkit-animation: attention 3s infinite;
-          animation: attention 3s infinite;
+}
+.showing__document-item--main {
+  background-color: #d03a17;
 }
 .showing__document-item a {
   color: #ffffff;
@@ -1911,4 +1920,85 @@ fieldset {
 }
 .social__item:active {
   border: 2px solid rgba(40, 54, 69, 0.1);
+}
+.registration {
+  width: auto;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+.registration__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 960px;
+  min-height: 150px;
+  margin: 0 auto;
+}
+.registration__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 500px;
+  padding-top: 30px;
+}
+.registration__header {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #04619e;
+}
+.registration__text {
+  max-width: 940px;
+  padding-bottom: 30px;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #3cccef;
+  text-align: center;
+}
+.registration__pay {
+  max-width: 940px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #04619e;
+  text-align: center;
+}
+.registration__btn {
+  padding: 20px 0;
+}
+@media (max-width: 930px) {
+  .registration__text {
+    width: 100%;
+    padding: 0px 12px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  .registration__wrapper img {
+    width: 100%;
+  }
 }

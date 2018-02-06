@@ -8,7 +8,7 @@
 css/*.css
 node_modules/
 #inbox/
-#inbox/**
+#inbox/*.*
 npm-debug.*
 Thumbs.db
 
