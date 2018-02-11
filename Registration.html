@@ -86,9 +86,101 @@
       <section class="registration__block">
         <h2 class="registration__header">Открытый чемпионат города Алматы по кроссу</h2>
         <p class="registration__text">31 марта 2018г. г.Алматы. Алматинский ипподром</p>
-        <p class="registration__pay">Вы можете оплатить через Яндекс сервис, нажав на кнопку ниже</p>
-        <p class="registration__pay">или с любой электронной платежной системы на счет<br>410016101128780</p>
-        <iframe class="registration__btn" src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%92%D0%B7%D0%BD%D0%BE%D1%81%20%D0%B7%D0%B0%20%D1%81%D0%BE%D1%80%D0%B5%D0%B2%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&default-sum=500&button-text=11&yamoney-payment-type=on&button-size=m&button-color=orange&fio=on&phone=on&mail=on&successURL=www.almatyathletics.com&quickpay=small&account=410016101128780&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+      </section>
+
+      <section class="form-block">
+        <h3 class="form-block__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br> Пожалуйста, заполните форму ниже:</h3>
+        <h3 class="form-block__header-form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+        <div class="form-block__wrapper">
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__person">
+              <div class="form__field">
+                <label class="form__name" for="surname">Фамилия:</label>
+                <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="form__field">
+                <label for="your-name" class="form__name">Имя:</label>
+                <input type="text" class="form__input" id="your-name" name="your-name" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="form__field">
+                <label for="patronic" class="form__name">Отчество:</label>
+                <input type="text" class="form__input" id="patronic" name="patronic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form__person form__person--bg">
+              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+              <div class="form__wrap">
+                <div class="form__wrap-check">
+                  <div class="form__option">
+                    <input type="checkbox" id="selfi" name="travel" checked>
+                    <label for="selfi" class="form__label">Сделал селфи с акулой</label>
+                  </div>
+                  <div class="form__option">
+                    <input type="checkbox" id="beach" name="travel" checked>
+                    <label for="beach" class="form__label">Обгорел на пляже</label>
+                  </div>
+                </div>
+                <div class="form__wrap-check">
+                  <div class="form__option">
+                    <input type="checkbox" id="norris" name="travel">
+                    <label for="norris" class="form__label">Видел Чака Норриса</label>
+                  </div>
+                  <div class="form__option">
+                    <input type="checkbox" id="buy" name="travel">
+                    <label for="buy" class="form__label">Накупил сувениров</label>
+                  </div>
+                </div>
+                <div class="form__wrap-check">
+                  <div class="form__option">
+                    <input type="checkbox" id="tower" name="travel" checked>
+                    <label for="tower" class="form__label">Удержал башню</label>
+                  </div>
+                  <div class="form__option">
+                    <input type="checkbox" id="hotel" name="travel">
+                    <label for="hotel" class="form__label">Разгромил отель</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__person">
+              <h2 class="form__title form__title--hidden">Контактная информация</h2>
+              <div class="form__wrap">
+                <div class="form__field form__field--contact">
+                  <label for="phone" class="form__name">Номер телефона</label>
+                  <input type="tel" class="form__input" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__field form__field--contact">
+                  <label for="your-email" class="form__name">Адрес почты</label>
+                  <input type="email" class="form__input" id="your-email" name="your-email" placeholder="Введите почту *" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__person form__person--bg">
+              <h2 class="form__title">С каким приложением путешествовали?</h2>
+              <div class="form__radio">
+                <input type="radio" id="ios" name="program" checked>
+                <label for="ios" class="form__label">Pink для iOS</label>
+              </div>
+              <div class="form__radio">
+                <input type="radio" id="andro" name="program">
+                <label for="andro" class="form__label">Pink на Android</label>
+              </div>
+              <div class="form__radio">
+                <input type="radio" id="win" name="program">
+                <label for="win" class="form__label">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__person">
+              <h2 class="form__title form__title--emotion">Опишите свои эмоции</h2>
+              <textarea name="form__emotion-descr" id="emotion-descr" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="form__end">
+              <button class="form__send" type="submit">Отправить форму</button>
+              <p class="form__text"><span class="form__star">*</span> — обязательные поля</p>
+              <p class="form__text form__text--hidden"><span class="form__star">*</span> — обязательные для заполнения поля</p>
+            </div>
+          </form>
+        </div>
       </section>
 
       <!--<p class="slogan__text">Победа не за тем кто побеждает на стадионах, а за тем кто продолжает заниматься!</p>
@@ -130,6 +222,19 @@
     <p class="page-footer__text">© Федерация легкой атлетики Алматы 2017</p>
   </div>
 </footer>
+
+
+<div class="modal modal--success">
+  <h2 class="modal__title">Ваша заявка отправлена</h2>
+  <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+  <button class="modal__btn" type="button">Закрыть окно</button>
+</div>
+<div class="modal modal--error">
+  <h2 class="modal__title">Что-то пошло не так!</h2>
+  <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="modal__btn" type="button">Ок</button>
+</div>
+
 <script src="js/slider.js"></script>
 <script src="js/script.js"></script>
 </body>

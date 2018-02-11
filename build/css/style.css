@@ -701,6 +701,22 @@ fieldset {
   color: #3cccef;
   text-align: center;
 }
+.slogan__btn {
+  position: relative;
+  z-index: 6;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 10px 70px;
+  color: #ffffff;
+  background-color: #3cccef;
+  border-radius: 30px;
+  border: 2px solid #fde666;
+  text-transform: uppercase;
+}
+.slogan__btn:hover {
+  color: #fde666;
+  background-color: #25abcd;
+}
 @media (max-width: 930px) {
   .slogan__text {
     width: 100%;
