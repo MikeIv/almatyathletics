@@ -86,13 +86,15 @@
       <section class="registration__block">
         <h2 class="registration__header">Открытый чемпионат города Алматы по кроссу</h2>
         <p class="registration__text">31 марта 2018г. г.Алматы. Алматинский ипподром</p>
+        <ul class="showing__document-list">
+          <li class="showing__document-item showing__document-item--main"><a class="showing__document-link" href="doc/Положение для Любителей о проведении Открытого чемпионата по кроссу.pdf">Положение для Любителей о проведении Открытого чемпионата по кроссу</a></li>
+        </ul>
       </section>
 
       <section class="form-block">
-        <h3 class="form-block__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br> Пожалуйста, заполните форму ниже:</h3>
-        <h3 class="form-block__header-form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+        <h2 class="form-block__header-form">Пожалуйста зарегистрируйтесь, заполнив форму ниже:</h2>
         <div class="form-block__wrapper">
-          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form" action="send.php" method="post">
             <fieldset class="form__person">
               <div class="form__field">
                 <label class="form__name" for="surname">Фамилия:</label>
@@ -107,47 +109,12 @@
                 <input type="text" class="form__input" id="patronic" name="patronic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
-            <fieldset class="form__person form__person--bg">
-              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-              <div class="form__wrap">
-                <div class="form__wrap-check">
-                  <div class="form__option">
-                    <input type="checkbox" id="selfi" name="travel" checked="">
-                    <label for="selfi" class="form__label">Сделал селфи с акулой</label>
-                  </div>
-                  <div class="form__option">
-                    <input type="checkbox" id="beach" name="travel" checked="">
-                    <label for="beach" class="form__label">Обгорел на пляже</label>
-                  </div>
-                </div>
-                <div class="form__wrap-check">
-                  <div class="form__option">
-                    <input type="checkbox" id="norris" name="travel">
-                    <label for="norris" class="form__label">Видел Чака Норриса</label>
-                  </div>
-                  <div class="form__option">
-                    <input type="checkbox" id="buy" name="travel">
-                    <label for="buy" class="form__label">Накупил сувениров</label>
-                  </div>
-                </div>
-                <div class="form__wrap-check">
-                  <div class="form__option">
-                    <input type="checkbox" id="tower" name="travel" checked="">
-                    <label for="tower" class="form__label">Удержал башню</label>
-                  </div>
-                  <div class="form__option">
-                    <input type="checkbox" id="hotel" name="travel">
-                    <label for="hotel" class="form__label">Разгромил отель</label>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
             <fieldset class="form__person">
               <h2 class="form__title form__title--hidden">Контактная информация</h2>
               <div class="form__wrap">
                 <div class="form__field form__field--contact">
                   <label for="phone" class="form__name">Номер телефона</label>
-                  <input type="tel" class="form__input" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                  <input type="tel" class="form__input" id="phone" name="phone" placeholder="+7 (950) 555 55 55 *" required="">
                 </div>
                 <div class="form__field form__field--contact">
                   <label for="your-email" class="form__name">Адрес почты</label>
@@ -155,37 +122,22 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form__person form__person--bg">
-              <h2 class="form__title">С каким приложением путешествовали?</h2>
-              <div class="form__radio">
-                <input type="radio" id="ios" name="program" checked="">
-                <label for="ios" class="form__label">Pink для iOS</label>
-              </div>
-              <div class="form__radio">
-                <input type="radio" id="andro" name="program">
-                <label for="andro" class="form__label">Pink на Android</label>
-              </div>
-              <div class="form__radio">
-                <input type="radio" id="win" name="program">
-                <label for="win" class="form__label">Windows Phone</label>
-              </div>
-            </fieldset>
-            <fieldset class="form__person">
+            <!--<fieldset class="form__person">
               <h2 class="form__title form__title--emotion">Опишите свои эмоции</h2>
               <textarea name="form__emotion-descr" id="emotion-descr" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
+            </fieldset></!-->
             <div class="form__end">
-              <button class="form__send" type="submit">Отправить форму</button>
+              <button class="form__send" type="submit">Отправить данные</button>
               <p class="form__text"><span class="form__star">*</span> — обязательные поля</p>
               <p class="form__text form__text--hidden"><span class="form__star">*</span> — обязательные для заполнения поля</p>
             </div>
           </form>
+          <div class="form__pay">
+            <p class="form__pay-text">Взнос за участие в соревновании</p>
+          <a class="form__pay-btn" href="https://paybox.kz/payment.php?pg_merchant_id=503009&pg_amount=3000&pg_currency=KZT&pg_description=%D0%B2%D0%B7%D0%BD%D0%BE%D1%81+%D0%B7%D0%B0+%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%B5+%D0%B2+%D1%81%D0%BE%D1%80%D0%B5%D0%B2%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8&pg_salt=bxTQpps90R9jMCWL&pg_sig=d256784f558ef31becf25955f0a1cbaf">Оплатить</a></div>
         </div>
       </section>
 
-      <!--<p class="slogan__text">Победа не за тем кто побеждает на стадионах, а за тем кто продолжает заниматься!</p>
-      <img class="slogan__img" src="img/banner_600x797.jpg" alt="Соревнования по кроссу" width="600" height="797">
-      <a class="intro__btn">Страница регистрации</a></!-->
     </div>
   </section>
 

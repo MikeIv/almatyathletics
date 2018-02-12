@@ -1,17 +1,17 @@
 .modal {
-  display: block;
+  display: none;
   box-sizing: border-box;
   position: fixed;
   top: 45%;
   left: 50%;
   width: 320px;
   padding: 40px 20px 50px;
-  background-color: @white;
+  background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
   transform: translate(-50%, -50%);
 
   &--success {
-    background-image: linear-gradient(to top, @bg-lightgray, @bg-lightgray 163px, #fff 163px, #fff);
+    background-image: linear-gradient(to top, @light-gray, @light-gray 163px, #fff 163px, #fff);
 
     .modal__text {
       margin-bottom: 80px;
@@ -39,7 +39,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: @darkblue;
+  color: @dark-blue;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: @white;
+  color: #ffffff;
   text-transform: uppercase;
 
   &:hover {
@@ -69,52 +69,7 @@
 
   &:disabled {
     background-color: #e5e5e5;
-    color: @white;
+    color: #ffffff;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .modal {
-    width: 460px;
-    padding-left: 80px;
-    padding-right: 80px;
-
-    &--success {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-  }
-
-  .modal__title {
-    padding: 0 20px;
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .modal__text {
-    font-size: 18px;
-  }
-
-  .modal__btn {
-    width: 300px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .modal {
-    &--success {
-      width: 780px;
-      padding-left: 160px;
-      padding-right: 160px;
-
-      .modal__text {
-        margin-bottom: 85px;
-      }
-
-      .modal__btn {
-        width: 100%;
-      }
-    }
-  }
-}
-cd ..
