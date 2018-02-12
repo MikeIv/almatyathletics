@@ -98,27 +98,33 @@
             <fieldset class="form__person">
               <div class="form__field">
                 <label class="form__name" for="surname">Фамилия:</label>
-                <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *"
+                       required>
               </div>
               <div class="form__field">
                 <label for="your-name" class="form__name">Имя:</label>
-                <input type="text" class="form__input" id="your-name" name="your-name" placeholder="Введите ваше имя *" required>
+                <input type="text" class="form__input" id="your-name" name="name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="form__field">
-                <label for="patronic" class="form__name">Отчество:</label>
-                <input type="text" class="form__input" id="patronic" name="patronic" placeholder="Ну и отчество тоже">
+                <label for="patronic" class="form__name">Пол:</label>
+                <input type="text" class="form__input" id="patronic" name="sex" placeholder="Можно М или Ж *" required>
+              </div>
+              <div class="form__field">
+                <label for="age" class="form__name">Год рождения:</label>
+                <input type="text" class="form__input" id="age" name="age" placeholder="xx.xx.xxxx *" required>
               </div>
             </fieldset>
             <fieldset class="form__person">
               <h2 class="form__title form__title--hidden">Контактная информация</h2>
               <div class="form__wrap">
                 <div class="form__field form__field--contact">
-                  <label for="phone" class="form__name">Номер телефона</label>
-                  <input type="tel" class="form__input" id="phone" name="phone" placeholder="+7 (950) 555 55 55 *" required>
+                  <label for="phone" class="form__name">Номер телефона:</label>
+                  <input type="tel" class="form__input" id="phone" name="phone" placeholder="+7 (ххх) ххх хх хх *"
+                         required>
                 </div>
                 <div class="form__field form__field--contact">
-                  <label for="your-email" class="form__name">Адрес почты</label>
-                  <input type="email" class="form__input" id="your-email" name="your-email" placeholder="Введите почту *" required>
+                  <label for="your-email" class="form__name">Адрес электронной почты:</label>
+                  <input type="email" class="form__input" id="your-email" name="email" placeholder="Введите почту *" required>
                 </div>
               </div>
             </fieldset>
